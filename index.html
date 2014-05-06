@@ -5,21 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>FM106 Final Project</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script>
-    $(function() {
-      $( "#accordion" ).accordion();
-    });
-    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
     
   </head>
   
@@ -43,17 +40,14 @@
       </header>
       <section>
 
-<div id="accordion">
-  <h3>Section 1</h3>
-  <div>
     <p>
     Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
     ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
     amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
     odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
     </p>
-  </div>
-</div>
+    <button id="hide">Hide</button>
+  <button id="show">Show</button>
 
 <h2>
 <a name="africa" class="anchor"><span class="octicon octicon-link"></span></a><strong>Witchcraft in Africa</strong></h2>
